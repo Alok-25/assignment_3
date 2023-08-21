@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oYX-Jo-S1b">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -229,18 +230,49 @@
         <!--Camera-->
         <scene sceneID="dIl-y3-KQm">
             <objects>
-                <viewController id="0YW-e4-4K9" sceneMemberID="viewController">
+                <viewController id="0YW-e4-4K9" customClass="CameraViewController" customModule="ass1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3nH-QD-3Qp">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HBQ-M0-G3R">
+                                <rect key="frame" x="166.66666666666666" y="388" width="94.666666666666657" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-W7-FHf">
+                                        <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="67.666666666666671"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start test"/>
+                                        <connections>
+                                            <action selector="CameraButtonPressed:" destination="0YW-e4-4K9" eventType="touchUpInside" id="UXT-cN-rdG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqB-HW-BFm">
+                                        <rect key="frame" x="0.0" y="82.666666666666686" width="94.666666666666671" height="67.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Iz7-pj-urH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="edJ-Lb-0Zz"/>
                         <color key="backgroundColor" red="0.45490196078431372" green="0.60784313725490191" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HBQ-M0-G3R" firstAttribute="centerY" secondItem="3nH-QD-3Qp" secondAttribute="centerY" id="SsY-qZ-stg"/>
+                            <constraint firstItem="HBQ-M0-G3R" firstAttribute="centerX" secondItem="3nH-QD-3Qp" secondAttribute="centerX" id="W2x-74-rRk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" id="9ED-CT-fbn"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="eqB-HW-BFm" id="0hh-zs-tWU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbh-js-PUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="647"/>
+            <point key="canvasLocation" x="975.70093457943915" y="646.65226781857461"/>
         </scene>
         <!--Settings-->
         <scene sceneID="xQi-Yw-ijm">

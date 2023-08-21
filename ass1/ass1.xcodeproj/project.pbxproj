@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F0A4CB8C453137369A1390F /* Pods_ass1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5C30A83AA2C47C0B96A7BD /* Pods_ass1.framework */; };
+		E023C9BB2A908DE9005BE30B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023C9BA2A908DE9005BE30B /* CameraViewController.swift */; };
+		E023C9BD2A90E95A005BE30B /* APICapturedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */; };
 		E04E1C112A8792CB005E71BE /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E04E1C0F2A8792CB005E71BE /* DataModel.xcdatamodeld */; };
 		E04E1C132A87BB3C005E71BE /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E1C122A87BB3C005E71BE /* RealmData.swift */; };
 		E056BC8A2A7E135600AD4653 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BC892A7E135600AD4653 /* ShopViewController.swift */; };
@@ -50,6 +52,8 @@
 		3C34A9A60583F5DDFBD4006F /* Pods-ass1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ass1.debug.xcconfig"; path = "Target Support Files/Pods-ass1/Pods-ass1.debug.xcconfig"; sourceTree = "<group>"; };
 		5B5C30A83AA2C47C0B96A7BD /* Pods_ass1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ass1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66ECA964947845748A62FEBC /* Pods-ass1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ass1.release.xcconfig"; path = "Target Support Files/Pods-ass1/Pods-ass1.release.xcconfig"; sourceTree = "<group>"; };
+		E023C9BA2A908DE9005BE30B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICapturedPhoto.swift; sourceTree = "<group>"; };
 		E04E1C102A8792CB005E71BE /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E04E1C122A87BB3C005E71BE /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		E056BC892A7E135600AD4653 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				E056BC892A7E135600AD4653 /* ShopViewController.swift */,
 				E056BC962A7E6EFD00AD4653 /* test.swift */,
 				E0C329B42A74EE240056258F /* Main.storyboard */,
+				E023C9BA2A908DE9005BE30B /* CameraViewController.swift */,
+				E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */,
 				E0C329B72A74EE240056258F /* Assets.xcassets */,
 				E0C329B92A74EE240056258F /* LaunchScreen.storyboard */,
 				E0C329BC2A74EE240056258F /* Info.plist */,
@@ -362,6 +368,8 @@
 				E056BC8E2A7E13CD00AD4653 /* ShopManager.swift in Sources */,
 				E0C329AF2A74EE240056258F /* AppDelegate.swift in Sources */,
 				E04E1C112A8792CB005E71BE /* DataModel.xcdatamodeld in Sources */,
+				E023C9BD2A90E95A005BE30B /* APICapturedPhoto.swift in Sources */,
+				E023C9BB2A908DE9005BE30B /* CameraViewController.swift in Sources */,
 				E0C329B12A74EE240056258F /* SceneDelegate.swift in Sources */,
 				E056BC912A7E207800AD4653 /* Product.swift in Sources */,
 			);
@@ -538,6 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -545,12 +554,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richi.ass1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ass1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -566,6 +576,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -573,12 +584,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richi.ass1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ass1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
