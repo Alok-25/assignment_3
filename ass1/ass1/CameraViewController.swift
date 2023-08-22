@@ -18,6 +18,11 @@ class CameraViewController: UIViewController {
     var capturedImage:UIImage?
     
     
+    @IBAction func startBluetoothPressed(_ sender: Any) {
+        
+    }
+   
+    
     let exposureDurations: [CMTime] = [CMTimeMake(value: 1, timescale: 800),
                                        CMTimeMake(value: 1, timescale: 400),
                                        CMTimeMake(value: 1, timescale: 200),

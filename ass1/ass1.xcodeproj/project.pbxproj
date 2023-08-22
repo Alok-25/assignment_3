@@ -22,6 +22,8 @@
 		E056BC9F2A7FC3D000AD4653 /* ReusableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E056BC9D2A7FC3D000AD4653 /* ReusableCell.xib */; };
 		E056BCA22A7FD0EB00AD4653 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BCA02A7FD0EB00AD4653 /* ProductCell.swift */; };
 		E056BCA32A7FD0EB00AD4653 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E056BCA12A7FD0EB00AD4653 /* ProductCell.xib */; };
+		E05E35932A948B8600D972AF /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E35922A948B8600D972AF /* BluetoothViewController.swift */; };
+		E05E35952A94BF6300D972AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E35942A94BF6300D972AF /* ImageDownloader.swift */; };
 		E0C329AF2A74EE240056258F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329AE2A74EE240056258F /* AppDelegate.swift */; };
 		E0C329B12A74EE240056258F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329B02A74EE240056258F /* SceneDelegate.swift */; };
 		E0C329B32A74EE240056258F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329B22A74EE240056258F /* FirstViewController.swift */; };
@@ -66,6 +68,8 @@
 		E056BC9D2A7FC3D000AD4653 /* ReusableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableCell.xib; sourceTree = "<group>"; };
 		E056BCA02A7FD0EB00AD4653 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		E056BCA12A7FD0EB00AD4653 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		E05E35922A948B8600D972AF /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		E05E35942A94BF6300D972AF /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		E0C329AB2A74EE240056258F /* ass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C329AE2A74EE240056258F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C329B02A74EE240056258F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				E056BC892A7E135600AD4653 /* ShopViewController.swift */,
 				E056BC962A7E6EFD00AD4653 /* test.swift */,
 				E0C329B42A74EE240056258F /* Main.storyboard */,
+				E05E35922A948B8600D972AF /* BluetoothViewController.swift */,
+				E05E35942A94BF6300D972AF /* ImageDownloader.swift */,
 				E023C9BA2A908DE9005BE30B /* CameraViewController.swift */,
 				E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */,
 				E0C329B72A74EE240056258F /* Assets.xcassets */,
@@ -367,9 +373,11 @@
 				E056BC972A7E6EFD00AD4653 /* test.swift in Sources */,
 				E056BC8E2A7E13CD00AD4653 /* ShopManager.swift in Sources */,
 				E0C329AF2A74EE240056258F /* AppDelegate.swift in Sources */,
+				E05E35952A94BF6300D972AF /* ImageDownloader.swift in Sources */,
 				E04E1C112A8792CB005E71BE /* DataModel.xcdatamodeld in Sources */,
 				E023C9BD2A90E95A005BE30B /* APICapturedPhoto.swift in Sources */,
 				E023C9BB2A908DE9005BE30B /* CameraViewController.swift in Sources */,
+				E05E35932A948B8600D972AF /* BluetoothViewController.swift in Sources */,
 				E0C329B12A74EE240056258F /* SceneDelegate.swift in Sources */,
 				E056BC912A7E207800AD4653 /* Product.swift in Sources */,
 			);
@@ -549,6 +557,7 @@
 				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Using bluetooth to act as a peripheral device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -579,6 +588,7 @@
 				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Using bluetooth to act as a peripheral device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
