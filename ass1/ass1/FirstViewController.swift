@@ -8,7 +8,8 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    
+    static let storeInFirestore = false
+    let defaults = UserDefaults.standard
     var username: String?
     var email: String?
     var phonenumber: String?
@@ -38,12 +39,15 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
 
     @IBAction func ProccedButton(_ sender: UIButton) {
         //checks()
         if checks(){
             self.performSegue(withIdentifier: "GoToProfile", sender: self)
+            defaults.set(username!, forKey: "Username")
+            defaults.set(password!, forKey: "Password")
             print (username!)
             print(email!)
         }
@@ -57,6 +61,7 @@ class FirstViewController: UIViewController {
                 firstTab.username = username!
                 firstTab.email = email!
                 firstTab.phonenumber = phonenumber!
+               
             }
             
             

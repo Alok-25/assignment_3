@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F0A4CB8C453137369A1390F /* Pods_ass1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5C30A83AA2C47C0B96A7BD /* Pods_ass1.framework */; };
+		E023C9BB2A908DE9005BE30B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023C9BA2A908DE9005BE30B /* CameraViewController.swift */; };
+		E023C9BD2A90E95A005BE30B /* APICapturedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */; };
+		E04E1C112A8792CB005E71BE /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E04E1C0F2A8792CB005E71BE /* DataModel.xcdatamodeld */; };
+		E04E1C132A87BB3C005E71BE /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E1C122A87BB3C005E71BE /* RealmData.swift */; };
 		E056BC8A2A7E135600AD4653 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BC892A7E135600AD4653 /* ShopViewController.swift */; };
 		E056BC8E2A7E13CD00AD4653 /* ShopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BC8D2A7E13CD00AD4653 /* ShopManager.swift */; };
 		E056BC912A7E207800AD4653 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BC902A7E207800AD4653 /* Product.swift */; };
@@ -18,6 +22,8 @@
 		E056BC9F2A7FC3D000AD4653 /* ReusableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E056BC9D2A7FC3D000AD4653 /* ReusableCell.xib */; };
 		E056BCA22A7FD0EB00AD4653 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056BCA02A7FD0EB00AD4653 /* ProductCell.swift */; };
 		E056BCA32A7FD0EB00AD4653 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E056BCA12A7FD0EB00AD4653 /* ProductCell.xib */; };
+		E05E35932A948B8600D972AF /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E35922A948B8600D972AF /* BluetoothViewController.swift */; };
+		E05E35952A94BF6300D972AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E35942A94BF6300D972AF /* ImageDownloader.swift */; };
 		E0C329AF2A74EE240056258F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329AE2A74EE240056258F /* AppDelegate.swift */; };
 		E0C329B12A74EE240056258F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329B02A74EE240056258F /* SceneDelegate.swift */; };
 		E0C329B32A74EE240056258F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C329B22A74EE240056258F /* FirstViewController.swift */; };
@@ -48,6 +54,10 @@
 		3C34A9A60583F5DDFBD4006F /* Pods-ass1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ass1.debug.xcconfig"; path = "Target Support Files/Pods-ass1/Pods-ass1.debug.xcconfig"; sourceTree = "<group>"; };
 		5B5C30A83AA2C47C0B96A7BD /* Pods_ass1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ass1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66ECA964947845748A62FEBC /* Pods-ass1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ass1.release.xcconfig"; path = "Target Support Files/Pods-ass1/Pods-ass1.release.xcconfig"; sourceTree = "<group>"; };
+		E023C9BA2A908DE9005BE30B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICapturedPhoto.swift; sourceTree = "<group>"; };
+		E04E1C102A8792CB005E71BE /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		E04E1C122A87BB3C005E71BE /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		E056BC892A7E135600AD4653 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		E056BC8D2A7E13CD00AD4653 /* ShopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopManager.swift; sourceTree = "<group>"; };
 		E056BC902A7E207800AD4653 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -58,6 +68,8 @@
 		E056BC9D2A7FC3D000AD4653 /* ReusableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableCell.xib; sourceTree = "<group>"; };
 		E056BCA02A7FD0EB00AD4653 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		E056BCA12A7FD0EB00AD4653 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		E05E35922A948B8600D972AF /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		E05E35942A94BF6300D972AF /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		E0C329AB2A74EE240056258F /* ass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C329AE2A74EE240056258F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C329B02A74EE240056258F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +132,8 @@
 				E056BC8D2A7E13CD00AD4653 /* ShopManager.swift */,
 				E056BC902A7E207800AD4653 /* Product.swift */,
 				E056BC942A7E26EC00AD4653 /* APIHandler.swift */,
+				E04E1C0F2A8792CB005E71BE /* DataModel.xcdatamodeld */,
+				E04E1C122A87BB3C005E71BE /* RealmData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +169,10 @@
 				E056BC892A7E135600AD4653 /* ShopViewController.swift */,
 				E056BC962A7E6EFD00AD4653 /* test.swift */,
 				E0C329B42A74EE240056258F /* Main.storyboard */,
+				E05E35922A948B8600D972AF /* BluetoothViewController.swift */,
+				E05E35942A94BF6300D972AF /* ImageDownloader.swift */,
+				E023C9BA2A908DE9005BE30B /* CameraViewController.swift */,
+				E023C9BC2A90E95A005BE30B /* APICapturedPhoto.swift */,
 				E0C329B72A74EE240056258F /* Assets.xcassets */,
 				E0C329B92A74EE240056258F /* LaunchScreen.storyboard */,
 				E0C329BC2A74EE240056258F /* Info.plist */,
@@ -350,10 +368,16 @@
 				E0C329E22A75237F0056258F /* TabViewController.swift in Sources */,
 				E056BC952A7E26EC00AD4653 /* APIHandler.swift in Sources */,
 				E0C329B32A74EE240056258F /* FirstViewController.swift in Sources */,
+				E04E1C132A87BB3C005E71BE /* RealmData.swift in Sources */,
 				E056BC8A2A7E135600AD4653 /* ShopViewController.swift in Sources */,
 				E056BC972A7E6EFD00AD4653 /* test.swift in Sources */,
 				E056BC8E2A7E13CD00AD4653 /* ShopManager.swift in Sources */,
 				E0C329AF2A74EE240056258F /* AppDelegate.swift in Sources */,
+				E05E35952A94BF6300D972AF /* ImageDownloader.swift in Sources */,
+				E04E1C112A8792CB005E71BE /* DataModel.xcdatamodeld in Sources */,
+				E023C9BD2A90E95A005BE30B /* APICapturedPhoto.swift in Sources */,
+				E023C9BB2A908DE9005BE30B /* CameraViewController.swift in Sources */,
+				E05E35932A948B8600D972AF /* BluetoothViewController.swift in Sources */,
 				E0C329B12A74EE240056258F /* SceneDelegate.swift in Sources */,
 				E056BC912A7E207800AD4653 /* Product.swift in Sources */,
 			);
@@ -530,19 +554,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Using bluetooth to act as a peripheral device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richi.ass1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ass1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,19 +585,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP2989S72N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ass1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Using bluetooth to act as a peripheral device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richi.ass1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ass1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -690,6 +720,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E04E1C0F2A8792CB005E71BE /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E04E1C102A8792CB005E71BE /* DataModel.xcdatamodel */,
+			);
+			currentVersion = E04E1C102A8792CB005E71BE /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E0C329A32A74EE240056258F /* Project object */;
 }
